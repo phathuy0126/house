@@ -1,0 +1,26 @@
+<section class="c-point">
+    <div class="c-point__head">
+        <div class="c-point__headcol1">
+            <img src="./assets/img/pointhead.png" alt="イベント・見学会の見どころ！" class="c-point__img">
+        </div>
+        <div class="c-point__headcol2">
+            <h2 class="c-point__title">RECOMMENDED POINT</h2>
+            <p class="c-point__desc">イベント・見学会の<a href="#" class="u-serifhightlight">見どころ！</a></p>
+        </div>
+    </div>
+    <div class="c-plist">
+        <% linklists.main[0].pointlist.forEach(item=> { %>
+            <div class="c-plist__item">
+                <a href="#">
+                    <div class="c-plist__image">
+                        <img src="<%= item.image %>" alt="<%= item.title %>" class="c-plist__img">
+                    </div>
+                    <p class="c-plist__title">
+                        <%= item.title %>
+                    </p>
+                    <p class="c-plist__desc"><%- item.desc %></p>
+                </a>
+            </div>
+            <% }) %>
+    </div>
+</section>

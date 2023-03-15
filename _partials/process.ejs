@@ -1,0 +1,29 @@
+<section class="c-process">
+    <h4 class="c-process__title">
+        WEB来場予約が <a href="#" class="u-serifhightlight">オススメ！</a>
+    </h4>
+    <div class="c-process__desc">
+        <p>待ち時間ナシ！混雑をきにせず来場 OK！</p>
+        <p>経験豊富なスタッフがしっかりとご対応いたします。</p>
+    </div>
+    <div class="c-process__list">
+
+        <% linklists.main[0].processlist.forEach((item, index)=> { %>
+            <div class="c-process__item">
+                <a href="#" class="c-process__link"></a>
+                <img src="<%= item.icon %>" alt="<%= item.title %>" class="c-process__icon">
+                <p class="c-process__itemtile">
+                    <%= item.title %>
+                </p>
+                <div class="c-line"></div>
+                <p class="c-process__itemdesc">
+                    <%= item.desc %>
+                </p>
+            </div>
+            <% if(index !==linklists.main[0].processlist.length - 1) { %>
+                <img src="./assets/img/iarrowright.png" alt="<%= item.title %>" class="c-process__iconright">
+                <% } %>
+
+                    <% }) %>
+    </div>
+</section>

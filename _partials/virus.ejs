@@ -1,0 +1,33 @@
+<section class="c-virus">
+    <div class="c-virus__head">
+        <div class="c-virus__top">
+            <a href="#" class="c-virus__btn">ご来場のお客様へ</a>
+            <h2 class="c-virus__title">新型コロナウイルス感染症予防対策につきまして</h2>
+        </div>
+        <p class="c-virus__desc">ウェブココでは新型コロナウイルス感染拡大防止のため、対策を講じておりますので安心してご利用ください。</p>
+    </div>
+    <div class="c-virus__body">
+        <div class="c-virus__row">
+            <% linklists.main[0].viruslist.forEach((item, index)=> { %>
+                <% if(index < 5) {%>
+                    <div class="c-virus__item c-virus__item<%= index + 1 %>">
+                        <a href="#" class="c-virus__link"></a>
+                        <img src="<%= item.icon %>" alt="常時店内・モデルハウス換気中" class="c-virus__icon">
+                        <p class="c-virus__itemtitle"><%- item.title %></p>
+                    </div>
+                    <% } %>
+                        <% }) %>
+        </div>
+        <div class="c-virus__row">
+            <% linklists.main[0].viruslist.forEach((item, index)=> { %>
+                <% if(index> 4) {%>
+                    <div class="c-virus__item c-virus__item<%= index + 1 %>">
+                        <a href="#" class="c-virus__link"></a>
+                        <img src="<%= item.icon %>" alt="常時店内・モデルハウス換気中" class="c-virus__icon">
+                        <p class="c-virus__itemtitle"><%- item.title %></p>
+                    </div>
+                    <% } %>
+                        <% }) %>
+        </div>
+    </div>
+</section>
