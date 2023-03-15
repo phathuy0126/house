@@ -1,0 +1,19 @@
+* {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: OswaldLight;
+    src: url("./assets/fonts/Oswald/Oswald-Light.ttf");
+}
+
+button {
+    &:hover {
+        opacity: 0.7;
+    }
+    cursor: pointer;
+}

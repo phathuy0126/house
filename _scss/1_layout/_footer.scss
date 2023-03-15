@@ -1,0 +1,14 @@
+.c-footer {
+    text-align: center;
+    padding: 82px 0;
+    @include sp {
+        padding: 40px 0;
+    }
+
+    .c-footer__logo {
+        transform: scale(0.9);
+        @include sp {
+            width: 102px;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+.c-plist {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    @include sp {
+        gap: 15px;
+    }
+
+    .c-plist__item {
+        width: 25%;
+        max-width: 378px;
+        min-width: 300px;
+        padding: 22px 20px 45px;
+        background: #fff;
+        color: #231815;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        @include sp {
+            width: 45%;
+            min-width: 170px;
+            padding: 9px 9px 15px;
+        }
+    }
+
+    .c-plist__image{
+        
+    }
+
+    .c-plist__img{
+    
+    }
+
+    .c-plist__title {
+        font-size: 2.3rem;
+        line-height: calc(27.6/16);
+        padding: 22px 0 10px;
+        letter-spacing: 0.5px;
+        @include sp {
+            padding: 9px 0 3px;
+            font-size: 1.1rem;
+            letter-spacing: -0.2px;
+        }
+    }
+
+    .c-plist__desc {
+        font-size: 1.9rem;
+        font-weight: 300;
+        word-wrap: break-word;
+        line-height: 1.41;
+        letter-spacing: 0.5px;
+        @include sp {
+            font-size: 0.95rem;
+            letter-spacing: 0.2px;
+        }
+    }
+}

@@ -1,0 +1,170 @@
+.c-listwelcome {
+    width: 100%;
+    max-width: 1260px;
+    // transform: translateX(19px);
+
+    .c-listwelcome__item:not(.c-listwelcome__item:last-child) {
+        margin-bottom: 53px;
+        @include sp {
+            margin-bottom: 25px;
+        }
+    }
+
+    .c-listwelcome__item:nth-child(3) {
+        .c-listwelcome__desc {
+            line-height: 1.6;
+        }
+
+        .c-listwelcome__image {
+            margin-right: 27px !important;
+            transform: translateX(-10px);
+            @include sp {
+                transform: translateX(0);
+            }
+        }
+    }
+
+    .c-listwelcome__item:nth-child(1n) {
+        .c-listwelcome__image {
+            margin-right: 38px;
+            @include tab {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .c-listwelcome__item:nth-child(2n) {
+        flex-direction: row-reverse;
+        @include tab {
+            flex-direction: column;
+        }
+
+        .c-listwelcome__content {
+            // padding-left: 55px;
+            // padding-top: 7px;
+            // padding-right: 0;
+            // padding-bottom: 3px;
+            padding: 7px 0 3px 55px;
+            @include sp {
+                padding: 0;
+            }
+        }
+
+        .c-listwelcome__image {     
+            padding-left: 27px;
+            height: 388px;
+            padding-top: 46px;
+            transform: translateY(-4px);
+            @include sp {
+                transform: translate(0);
+                padding-top: 0;
+                padding-left: 20px;
+            }
+        }
+
+        .c-listwelcome__meriticon {
+            right: -45px;
+            @include sp {
+                right: -30px;
+            }
+        }
+
+        .c-listwelcome__desc {
+            line-height: 1.6;
+        }
+    }
+
+    .c-listwelcome__item {
+        display: flex;
+        justify-content: space-between;
+        @include tab {
+            flex-direction: column;
+        }
+    }
+
+    .c-listwelcome__content {
+        flex: 1.1;
+        color: #231815;
+        padding-left: 23px;
+        padding-right: 70px;
+        @include sp {
+            padding: 0;
+        }
+    }
+
+    .c-listwelcome__image {
+        flex: 0.97;
+        padding-top: 37px;
+        @include sp {
+            padding-left: 5%;
+            padding-top: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @include sp {
+            width: 100%;
+            max-width: 307px;
+        }
+    }
+
+    .c-listwelcome__meritnum {
+        @include sp {
+            width: 45px;
+        }
+    }
+    
+    .c-listwelcome__col1 {
+        padding-left: 18px;
+        @include sp {
+            padding-left: 10px;
+        }
+    }
+
+    .c-listwelcome__col2 {
+        padding-left: 80px;
+        transform: translateY(-16px);
+        @include sp {
+            padding-left: 53px;
+        }
+    }
+
+    .c-listwelcome__title {
+        position: relative;
+        width: fit-content;
+        max-width: 91%;
+        font-size: 2.8rem;
+        font-weight: 700;
+        padding: 22px 0 20px;
+        letter-spacing: 1px;
+        @include sp {
+            font-size: 1.4rem;
+            padding-bottom: 10px;
+            padding-top: 19px;
+        }
+    }
+
+    .c-listwelcome__meriticon {
+        position: absolute;
+        top: 0;
+        right: -30px;
+        @include sp {
+            right: -30px;
+            top: 6px;
+            width: 24px;
+        }
+    }
+
+    .c-listwelcome__desc {
+        font-size: 2.1rem;
+        line-height: calc(34/16);
+        line-height: 1.7;
+        letter-spacing: 1px;
+        @include sp {
+            font-size: 1.05rem;
+        }
+    }
+}

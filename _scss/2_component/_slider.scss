@@ -1,0 +1,31 @@
+.slick-arrow {
+    position: absolute;
+    bottom: -90px;
+    right: 0;
+    cursor: pointer;
+
+    @include sp {
+        right: 17px;
+        bottom: -50px;
+        width: 31px;
+        height: 31px;
+    }
+}
+
+.c-slider {
+    width: 100%;
+    max-width: 1440px;
+    margin-bottom: 93px;
+    cursor: grab;
+    @include sp {
+        margin-bottom: 85px;
+        padding-right: 15px;
+    }
+
+    .c-slider__prev {
+        right: 73px;
+        @include sp {
+            right: 60px;
+        }
+    }
+}

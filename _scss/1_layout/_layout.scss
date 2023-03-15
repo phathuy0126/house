@@ -1,0 +1,14 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    font-family: $main-fonts;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+//-------------------------------------------------------
+.l-container {
+    width: 100%;
+    max-width: $base-width;
+    margin: 0 auto;
+}

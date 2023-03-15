@@ -1,0 +1,195 @@
+.c-virus {
+    width: 100%;
+    max-width: 1278px;
+    padding: 0 $spacing;
+    margin: 0 auto 109px;
+    @include sp {
+        display: none;
+        padding: 0 20px;
+    }
+
+    .c-virus__head {
+        background-color: #231815;
+        color: #fff;
+        padding: 58px 50px 42px;
+        @include sp {
+            padding: 25px 40px 15px;
+        }
+    }
+    
+    .c-virus__top {
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        margin-bottom: 11px;
+        @include tab {
+            flex-direction: column;
+            padding-left: 0;
+        }
+    }
+
+    .c-virus__btn {  
+        flex-shrink: 0;
+        background-color: #fff;
+        color: #231815;
+        padding: 9px 12px 9px 27px;
+        border-radius: 30px;
+        font-size: 2.3rem;
+        font-weight: 700;
+        margin-right: 30px;
+        width: 200px;
+        @include sp {
+            width: fit-content;
+            border-radius: 12px;
+            font-size: 1.15rem;
+            margin-right: 0;
+            padding: 5px 15px;
+        }
+    }
+    
+    .c-virus__title {
+        font-size: 3.2rem;
+        font-weight: 300;
+        line-height: calc(31/16);
+        padding-left: 11px;
+        letter-spacing: 2.7px;
+        font-feature-settings: "palt";
+        @include sp {
+            font-size: 1.6rem;
+            line-height: 1.2;
+        }
+    }
+    
+    .c-virus__desc {
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: calc(33/16);
+        width: fit-content;
+        margin: 0 auto;
+        font-feature-settings: "palt";
+        letter-spacing: 1.7px;
+        @include sp {
+            padding: 0 38px;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+    }
+    
+    .c-virus__body {
+        border: 1px solid #231815;
+        padding: 30px 30px 32px;
+    }
+    
+    .c-virus__row {
+        &:not(.c-virus__row:last-child) .c-virus__item {
+            border-bottom: 1px solid #231815;
+        }
+
+        &:last-child {
+            .c-virus__item {
+                padding-bottom: 43px;
+            }
+        }
+        display: flex;
+        @include sp {
+            flex-wrap: wrap;
+        }
+    }   
+    
+    .c-virus__item {
+        position: relative;
+        width: 20.9%;
+        min-height: 216px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 35px 15px 33px;
+        transition: 0.3s ease;
+
+        @include sp {
+            min-height: 125px;
+            width: 50% !important;
+            padding: 20px 10px;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:nth-child(3) {
+            width: 19.6%;
+        }
+
+        &:nth-child(4) {
+            width: 19.8%;
+        }
+        
+        &:last-child {
+            width: 19%;
+        }
+
+        &:not(.c-virus__item:last-child) {
+            border-right: 1px solid #231815;
+            @include sp {
+                border-right: none;
+            }
+        }
+        
+        text-align: center;
+    }
+
+    .c-virus__link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    
+    .c-virus__icon {
+        @include sp {
+            width: 60px;
+            margin-bottom: 5px;
+        }
+    }
+    
+    .c-virus__itemtitle {
+        font-size: 1.5rem;
+        line-height: calc(23/16);
+        margin-top: auto;
+        letter-spacing: 0.4px;
+        font-feature-settings: "palt" 1;
+        color: #231815;
+        @include sp {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+
+.c-virussp {
+    display: none;
+    @include sp {
+        display: block;
+    }
+
+    .c-virussp__body {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 40px 20px;
+        border: 1px solid #231815;
+    }
+
+    .c-virus__item {
+        &:not(.c-virus__item:last-child, .c-virus__item:nth-child(9)) {
+            border-bottom: 1px solid #231815;
+        }
+
+        &:not(.c-virus__item:nth-child(2n)) {
+            border-right: 1px solid #231815;
+        }
+    }
+}
